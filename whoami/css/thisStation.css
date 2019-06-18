@@ -1,0 +1,36 @@
+.this_station {
+    margin-top: 50px;
+}
+
+.this_station .station {
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .this_station .station ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.this_station .station li {
+    font-size: 18px;
+}
+
+.this_station .station li p {
+    margin-left: 2em;
+    font-size: 16px;
+}
+
+.return {
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 24px;
+    left: 40px;
+    z-index: 999;
+}
+.return a{
+    color: #fff;
+    font-size: 30px;
+}
