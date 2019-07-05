@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans" class="loading">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>前端路由 - 程建</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="路由​    概念（vue）：​        当路径中的 hash 值改变时，要改变显示的内容​    原理：​        利用URL上的hash，当hash改变不会引起页面刷新，所以可以利用,"> 
+    <meta name="author" content="程建"> 
+    <link rel="alternative" href="atom.xml" title="程建" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">程建</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">前端路由</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">前端路由</h1>
+        <div class="stuff">
+            <span>六月 20, 2019</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Vue/">Vue</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/路由/">路由</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><p>​    <strong>概念（vue）：</strong><br>​        当路径中的 hash 值改变时，要改变显示的内容<br>​    <strong>原理：</strong><br>​        利用URL上的hash，当hash改变不会引起页面刷新，所以可以利用 hash 值来做单页面应用的路由，并且当 url 的 hash 发生变化的时候，可以触发相应 hashchange 回调函数。   </p>
+<h4 id="vue-中的路由插件：vue-routerue-router"><a href="#vue-中的路由插件：vue-routerue-router" class="headerlink" title="vue 中的路由插件：vue-routerue-router"></a>vue 中的路由插件：vue-routerue-router</h4><p>​        <strong>概念：</strong>是 vue 官方的 CLI （它是一个命令行工具）<br>​        <strong>作用：</strong>管理路由<br>​        <strong>安装：</strong><br>​            script<br>​            CDN<br>​            npm<br>​        <strong>使用：</strong><br>​            1） html<br>​                1.1 引入 vue &amp; vue-router<br>​                1.2 通过 router-link 设置请求路径<br>​                1.3 通过 router-view 来渲染组件<br>​            2） js<br>​                2.1 设置路由对应的组件<br>​                2.2 设置路由选项<br>​                2.3 创建 router 对象<br>​                2.4 挂载到 vue 实例中</p>
+<h4 id="动态路由："><a href="#动态路由：" class="headerlink" title="动态路由："></a>动态路由：</h4><p>​            <strong>设置动态路由：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="attr">name</span>: <span class="string">'news'</span>, <span class="attr">path</span>: <span class="string">'/news/:id'</span>, <span class="attr">component</span>: news &#125;</span><br></pre></td></tr></table></figure>
+
+<p>​           <strong>获取动态路由参数：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.$route.params.id</span><br></pre></td></tr></table></figure>
+
+<p>​            <strong>router-link 的 to 属性：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">"/index"</span>&gt;</span><span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">:to</span>=<span class="string">"url"</span>&gt;</span><span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">:to</span>=<span class="string">"&#123;path: '/index'&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">:to</span>=<span class="string">"&#123;name: 'index'&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="redirect-重定向："><a href="#redirect-重定向：" class="headerlink" title="redirect 重定向："></a>redirect 重定向：</h4><p>​            <strong>作用：</strong>可以从一个路由跳转到另一个路由<br>​            <strong>应用：</strong><br>​                1）设置默认首页</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="attr">path</span>: <span class="string">'/'</span>, <span class="attr">redirect</span>: <span class="string">'/index'</span> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>​                2）统一错误处理页面</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">                   &#123;<span class="attr">name</span>: <span class="string">'err'</span>, <span class="attr">path</span>: <span class="string">'/err'</span>, <span class="attr">component</span>: err&#125;,</span><br><span class="line">                   &#123; <span class="attr">path</span>: <span class="string">'*'</span>, <span class="attr">redirect</span>: <span class="string">'/err'</span>&#125;</span><br><span class="line">               ]</span><br></pre></td></tr></table></figure>
+
+<pre><code>**导航：**
+           链接式导航
+               作用：通过点击链接跳转到指定的路由中</code></pre><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">"/index"</span>&gt;</span><span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>​                        编程式导航<br>​                            作用：通过 js 代码中转到指定的路由中</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.$router.push(<span class="string">'/index'</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="redirect-导航守卫："><a href="#redirect-导航守卫：" class="headerlink" title="redirect 导航守卫："></a>redirect 导航守卫：</h4><pre><code>**全局前置守卫**</code></pre><p>​                    你可以使用 <code>router.beforeEach</code> 注册一个全局前置守卫：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123; ... &#125;)</span><br><span class="line"></span><br><span class="line">router.beforeEach(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// to: Route: 即将要进入的目标 路由对象</span></span><br><span class="line">  <span class="comment">// from: Route: 当前导航正要离开的路由</span></span><br><span class="line">  <span class="comment">// next:  一定要调用该方法来 resolve 这个钩子。执行效果依赖 next 方法的调用参数。</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>​            <strong>路由独享的守卫</strong></p>
+<p>​                    你可以在路由配置上直接定义 <code>beforeEnter</code> 守卫：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123;</span><br><span class="line">  routes: [</span><br><span class="line">    &#123;</span><br><span class="line">      path: <span class="string">'/foo'</span>,</span><br><span class="line">      component: Foo,</span><br><span class="line">      beforeEnter: <span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>​                    这些守卫与全局前置守卫的方法参数是一样的。</p>
+<p>​            <strong>组件内的守卫</strong></p>
+<p>​                最后，你可以在路由组件内直接定义以下路由导航守卫：</p>
+<p>​                    beforeRouteEnter</p>
+<p>​                    beforeRouteUpdate</p>
+<p>​                    beforeRouteLeave</p>
+<h4 id="完整的导航解析流程"><a href="#完整的导航解析流程" class="headerlink" title="完整的导航解析流程"></a>完整的导航解析流程</h4><ol>
+<li>导航被触发。</li>
+<li>在失活的组件里调用离开守卫。</li>
+<li>调用全局的 <code>beforeEach</code> 守卫。</li>
+<li>在重用的组件里调用 <code>beforeRouteUpdate</code> 守卫 (2.2+)。</li>
+<li>在路由配置里调用 <code>beforeEnter</code>。</li>
+<li>解析异步路由组件。</li>
+<li>在被激活的组件里调用 <code>beforeRouteEnter</code>。</li>
+<li>调用全局的 <code>beforeResolve</code> 守卫 (2.5+)。</li>
+<li>导航被确认。</li>
+<li>调用全局的 <code>afterEach</code> 钩子。</li>
+<li>触发 DOM 更新。</li>
+<li>用创建好的实例调用 <code>beforeRouteEnter</code> 守卫中传给 <code>next</code> 的回调函数。</li>
+</ol>
+<h4 id="扩展："><a href="#扩展：" class="headerlink" title="扩展："></a>扩展：</h4><pre><code>1. 默认情况下 vue-router 会给被点击过的 router-link 设置两个类名： router-link-exacte-active router-link-active
+2. 可以通过给 router-link 设置 active-class 属性来改变自动生成的 router-link-active 类名
+3. 可以通过给 router-link 设置 tag 属性来指定 router-link 生成的标签
+    嵌套路由：
+​            [
+    { name: &apos;news&apos;, path: &apos;/news&apos;, component: news, children: [
+    ​    { path: &apos;aaa&apos;, component: aaa }, // /news/aaa
+    ​    { path: &apos;bbb&apos;, component: bbb }  // /news/bbb
+    ] }
+​            ]
+​            // 将来要加载 /news/aaa 时，会
+​            //  先将 news 在它的 router-view 中进行渲染，渲染完成以后
+​            //  再将 aaa 渲染到 news 组件中的 router-view 中</code></pre>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                    
+                        <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
