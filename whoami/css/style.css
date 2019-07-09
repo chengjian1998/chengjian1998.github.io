@@ -331,6 +331,9 @@ canvas {
 	outline: none;
 }
 .contact .field {
+	width: 34%;
+}
+.field{
 }
 .contact .field .user {
 }
