@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans" class="loading">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vue生命周期 - 程建-个人博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="程建，博客，WEB前端，Vue，element-ui，scss，bootstrap-vue,"> 
+    <meta name="description" content="本人有两年WEB前端工作经验，可以熟练使用Vue、Nuxt.js、element-ui、bootstrap-vue、echarts、scss等前端相关技术,生命周期​        概念：​            当 vue 实例从 创建 — 运行 — 销毁，这其中经历的过程叫做生命周期。​        流程：​            1.创建 vu,"> 
+    <meta name="author" content="程建"> 
+    <link rel="alternative" href="atom.xml" title="程建-个人博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">程建-个人博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://chengjian123.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">Vue生命周期</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Vue生命周期</h1>
+        <div class="stuff">
+            <span>六月 05, 2019</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/重要/">重要</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p>​        <strong>概念：</strong><br>​            当 vue 实例从 创建 — 运行 — 销毁，这其中经历的过程叫做生命周期。<br>​        <strong>流程：</strong><br>​            1.创建 vue 实例<br>​            2.初始化事件 和 生命周期<br>​            3.初始化 data 和 methods<br>​            4.创建虚拟 dom<br>​            5.使用 虚拟 dom 来替换 vue 实例中的 el 属性，解析语法<br>​            6.进入 mounted 状态： 如果 data 中的数据发生改变，会重新生成虚拟 dom, 并且解析语法，再次进入 mounted 状态<br>​            7.销毁 vue 实例（调用 $destroy 方法）<br>​        <strong>钩子函数：</strong><br>​            1.初始化 data 和 methods时执行<br>​                之前<br>​                    beforeCreate<br>​                之后<br>​                    created<br>​            2.使用 虚拟 dom 来替换 vue 实例中的 el 属性时执行<br>​                之前：<br>​                    beforeMount<br>​                之后<br>​                    mounted<br>​            3.data 中的数据发生改变时执行<br>​                之前：<br>​                    beforeUpdate<br>​                之后：<br>​                    updated<br>​            4.销毁 vue 实例时执行<br>​                之前：<br>​                    beforeDestroy<br>​                之后：<br>​                    destroye</p>
+<h4 id="生命周期图示"><a href="#生命周期图示" class="headerlink" title="生命周期图示"></a><a href="https://cn.vuejs.org/v2/guide/instance.html#生命周期图示" target="_blank" rel="noopener">生命周期图示</a></h4><p><img src="/Vue生命周期/lifecycle.png" alt="lifecycle"></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                    
+                        <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                    
+                        <li title='2' data-url='https://m701.music.126.net/20200402234613/8c9c15ace56e39ac4010c8ddaf922c67/jdyyaac/0e08/0458/560b/9bb15e956e3263e6c50aaa638c5c1fb9.m4a'></li>
+                    
+                        <li title='3' data-url='https://m701.music.126.net/20200402234349/21d31391f7a934b39db5cea59c8ce1e0/jdyyaac/0159/510c/525c/633ed69324ff04fcbe54e664e0c4766b.m4a'></li>
+                    
+                </ul>
+            
+        </div>
+        <!-- 
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+ -->
+<!-- 来必力City版安装代码 -->
+<!-- <div id="lv-container" data-id="city" data-uid="MTAyMC80OTQyNC8yNTkxNg==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div> -->
+<!-- City版安装代码已完成 -->
+<head><meta name="generator" content="Hexo 3.9.0">
+    ..
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    ...
+</head>
+
+<body>
+    ...
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'AazJ0Kwqhoe6GYApQmSbblUW-gzGzoHsz',
+            appKey: 'Tw1jCC104Xm708BSiq2EvxF6',
+            placeholder: '各位道友，请举手发言',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+        })
+    </script>
+</body>
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+<!-- partial('_partial/livere') -->
+<!-- 来必力City版安装代码 -->
+<!-- <div id="lv-container" data-id="city" data-uid="MTAyMC80OTQyNC8yNTkxNg==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div> -->
+<!-- City版安装代码已完成 -->
+<!-- <head>
+    ..
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    ...
+</head>
+
+<body>
+    ...
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'AazJ0Kwqhoe6GYApQmSbblUW-gzGzoHsz',
+            appKey: 'Tw1jCC104Xm708BSiq2EvxF6',
+            placeholder: '各位道友，请举手发言',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+        })
+    </script>
+</body> -->
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>

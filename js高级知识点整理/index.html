@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans" class="loading">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>js高级知识点整理 - 程建-个人博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="程建，博客，WEB前端，Vue，element-ui，scss，bootstrap-vue,"> 
+    <meta name="description" content="本人有两年WEB前端工作经验，可以熟练使用Vue、Nuxt.js、element-ui、bootstrap-vue、echarts、scss等前端相关技术,04-JavaScript高级1.原型对象​    1.1. 学习原因 
+​        1.1.1. 之前的构造函数在 每创建一次对象的就会添加一次方 
+​                法，而,"> 
+    <meta name="author" content="程建"> 
+    <link rel="alternative" href="atom.xml" title="程建-个人博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">程建-个人博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://chengjian123.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">js高级知识点整理</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">js高级知识点整理</h1>
+        <div class="stuff">
+            <span>五月 03, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h2 id="04-JavaScript高级"><a href="#04-JavaScript高级" class="headerlink" title="04-JavaScript高级"></a>04-JavaScript高级</h2><h4 id="1-原型对象"><a href="#1-原型对象" class="headerlink" title="1.原型对象"></a>1.原型对象</h4><p>​    1.1. 学习原因 </p>
+<p>​        1.1.1. 之前的构造函数在 每创建一次对象的就会添加一次方 </p>
+<p>​                法，而方法是一样的，这样就 会造成内存的浪费。 </p>
+<p>​            1.2. 构造函数和原型的关系 </p>
+<p>​                1.2.1. - 构造函数可以通过prototype找到原型 - 原型可以通过 </p>
+<p>​                constructor找到构造函数 </p>
+<p>​            1.3. 获取对象原型的方式并接收 </p>
+<p>​                1.3.1. var n = 构造函数名.prototype </p>
+<p>​            1.4. 给接收的原型里添加方法 </p>
+<p>​                1.4.1. n.方法名 = function（）｛函数体｝ </p>
+<p>​            1.5. 给原型里添加方法 </p>
+<p>​                1.5.1. 构造函数名.prototype.方法名 = function( ){ 函数体｝ </p>
+<p>​            1.6. 实例对象和原型对象的关系（原型链） </p>
+<p>​                1.6.1. 实例对象在调用一个方法时的执行顺序 </p>
+<p>​                    ①先在自身查找。</p>
+<p>​                    ②诺自身没有则会通过<strong>proto</strong>找到原型，去原型中去找 </p>
+<p>​                    ③诺原型中没则会通过<strong>proto</strong>找到原型中的原型，去查找</p>
+<pre><code>④诺还没有则会再去上一级查找直到老祖宗原型，诺还没有就null  </code></pre><h5 id="2-继承（js没有继承）"><a href="#2-继承（js没有继承）" class="headerlink" title="2. 继承（js没有继承）"></a>2. 继承（js没有继承）</h5><p>​            2.1. 继承作用介绍 </p>
+<p>​                2.1.1. 子对象继承父对象的属性或方法（减少代码冗余）2.2. 原型继承 </p>
+<p>​                2.2.1. 原理 </p>
+<p>​                    2.2.1.1. 更改子类原型的指向（给子类原型重新赋值） </p>
+<p>​                2.2.2. 代码 </p>
+<p>​                    2.2.2.1. //创建fn1 function fn1（）｛name：‘名字’｝ //给fn1原型里添加方法 </p>
+<p>​                            fn1.prototype,方法名 = function（）｛函数体｝ //创建对象fn1对象 var p1 = new fn1（） //创建fn2  </p>
+<p>​                            function fn2（）｛｝ //吧p1对象附给fn2的原型 </p>
+<p>​                2.2.3. 优缺点 </p>
+<p>​                    2.2.3.1. 缺点：属性无法传递 </p>
+<p>​                    2.2.3.2. 优点：方法可以传递 </p>
+<p>​            2.3. 借用继承 </p>
+<p>​                2.3.1. 原理 </p>
+<p>​                    2.3.1.1. call方法改变this的指向</p>
+<p>​                2.3.2. 实现 </p>
+<p>​                    2.3.2.1. 在子类构造函数中借用父类构造函数，并且在call中传入子类对象 </p>
+<p>​                2.3.4. 优缺点2.3.4.1. 优点：属性可以借用 </p>
+<p>​                    2.3.4.2. 缺点;方法不可以借用 </p>
+<p>​            2.4. 原型+借用组合继承 </p>
+<p>​                2.4.1. 缺点 </p>
+<p>​                    2.4.1.1. 给其中一个实例对象添加方法其它的对象都可以使用 （添加到原型） </p>
+<p>​                2.4.2. 解决 </p>
+<p>​                    2.4.2.1. 让对象的原型不要指向同一个（借用 + 拷贝继承） </p>
+<p>​            2.5. 拷贝 </p>
+<p>​                2.5.1. 原理 </p>
+<p>​                    2.5.1.1. 对象B 拷贝 对象A中的属性和方法（把对象A中属性和方法复制一份新的给对象B）（利用for in循环） </p>
+<p>​                2.5.2. 代码 </p>
+<p>​                    2.5.2.1. for (var key in 父对象)｛ //循环一个父对象的方法就 判断子对象有没有此方法， if（子对象[yey]==undefined）｛ //没有的话赋给子对象 子对象[key] = 父对象[key] ｝ ｝ 可 以用函数封装起来两个父子对象设成参数，实现多次调用 </p>
+<p>​            2.6. 借用+拷贝 </p>
+<p>​                2.6.1. 拷贝：拷贝方法 借用：借用属性 </p>
+<h5 id="3-this指向的不同情况"><a href="#3-this指向的不同情况" class="headerlink" title="3.this指向的不同情况"></a>3.this指向的不同情况</h5><p>​            3.1. 普通函数中this的指向 window; </p>
+<p>​            3.2. 构造函数中的this指向当前所创建的对象3.3. 定时器中this的指向</p>
+<p>​            3.3.定时器中的this指向window </p>
+<p>​            3.4. 对象方法中的this指向 指向调用者</p>
+<p>​            3.5. 事件处理程序中的this指向 事件源 </p>
+<h5 id="4-改变函数内部this的指向"><a href="#4-改变函数内部this的指向" class="headerlink" title="4.改变函数内部this的指向"></a>4.改变函数内部this的指向</h5><p>​            4.1. call方法 </p>
+<p>​                4.1.1. 语法：函数名.call(调用者,参数1…) </p>
+<p>​            4.2. apply方法 </p>
+<p>​                4.2.1. 语法：函数名.apply(调用者,[参数1…]) </p>
+<p>​            4.3. bind方法 </p>
+<p>​                4.3.1. 语法：函数名.bind(调用者,参数1…); </p>
+<ol start="5">
+<li><h5 id="函数的其他成员"><a href="#函数的其他成员" class="headerlink" title="函数的其他成员"></a>函数的其他成员</h5><p>​    5.1. arguments获取用户传入的实参 </p>
+<p>​    5.2. length获取函数形参的个数</p>
+<p>​    5.3. name函数的名字</p>
+</li>
+<li><h5 id="函数作为参数和返回值"><a href="#函数作为参数和返回值" class="headerlink" title="函数作为参数和返回值"></a>函数作为参数和返回值</h5><p>​    6.1. 函数作为函数的参数（回调函数） </p>
+<p>​        6.1.1. 本质 还是实参和形参的关系。 只不过实参是一个匿名函数而已。 而将来形参接收了匿名函数。 </p>
+<p>​        6.1.2. 解释 </p>
+<p>​        6.1.2.1. 当调用一个函数A时，需要向函数A内部传入一段程序 时，可以选择将一个函数B当做实参传递给另一个函数A的形 参，并在另一个函数中执行。 </p>
+<p>​        6.1.3. 案例：模拟动画完成后 </p>
+<p>​    6.2. 函数作为函数的返回值 </p>
+<p>​        6.2.1. 本质 </p>
+<p>​            6.2.1.1. 就是使用return关键字，将内部的函数返回。 </p>
+<p>​        6.2.2. 解释 </p>
+<p>​            6.2.2.1. 在程序中，有时，在调用一个函数时，需要返回一个 新的函数来实现功能。比如之前学习的bind方法调用完后返 回一个新的函数。6.2.3. 案例 </p>
+<p>​            6.2.3.1. 写一个函数实现返回可以检测任意类型的函数 </p>
+</li>
+</ol>
+<h5 id="7-闭包"><a href="#7-闭包" class="headerlink" title="7. 闭包"></a>7. 闭包</h5><p>​            7.1. 用途 </p>
+<p>​                7.1.1. - 可以在函数外部读取函数内部成员 - 让函数内成员始终 存活在内存中(延长局部变量的生命周期)                         朝阳群众卧底在函数别墅里抓小三给外面操作 </p>
+<h5 id="8-递归"><a href="#8-递归" class="headerlink" title="8. 递归"></a>8. 递归</h5><p>​            8.1. 什么是递归 </p>
+<p>​                8.1.1. 程序调用自身的编程技巧称为递归（在函数内部调用自己 的技巧） </p>
+<p>​            8.2. 递归的三个阶段 </p>
+<p>​                8.2.1. - 递归前进段 - 递归边界条件 - 递归返回段 </p>
+<p>​            8.3. 递归的优点 </p>
+<p>​                8.3.1. 减少代码量。 </p>
+<p>​            8.4. 递归的缺点 </p>
+<p>​                8.4.1. 若递归的层数较多时，会消耗cpu,浪费内存，影响性能。存，影响性能。</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                    
+                        <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                    
+                        <li title='2' data-url='https://m701.music.126.net/20200402234613/8c9c15ace56e39ac4010c8ddaf922c67/jdyyaac/0e08/0458/560b/9bb15e956e3263e6c50aaa638c5c1fb9.m4a'></li>
+                    
+                        <li title='3' data-url='https://m701.music.126.net/20200402234349/21d31391f7a934b39db5cea59c8ce1e0/jdyyaac/0159/510c/525c/633ed69324ff04fcbe54e664e0c4766b.m4a'></li>
+                    
+                </ul>
+            
+        </div>
+        <!-- 
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+ -->
+<!-- 来必力City版安装代码 -->
+<!-- <div id="lv-container" data-id="city" data-uid="MTAyMC80OTQyNC8yNTkxNg==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div> -->
+<!-- City版安装代码已完成 -->
+<head><meta name="generator" content="Hexo 3.9.0">
+    ..
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    ...
+</head>
+
+<body>
+    ...
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'AazJ0Kwqhoe6GYApQmSbblUW-gzGzoHsz',
+            appKey: 'Tw1jCC104Xm708BSiq2EvxF6',
+            placeholder: '各位道友，请举手发言',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+        })
+    </script>
+</body>
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+<!-- partial('_partial/livere') -->
+<!-- 来必力City版安装代码 -->
+<!-- <div id="lv-container" data-id="city" data-uid="MTAyMC80OTQyNC8yNTkxNg==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div> -->
+<!-- City版安装代码已完成 -->
+<!-- <head>
+    ..
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    ...
+</head>
+
+<body>
+    ...
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'AazJ0Kwqhoe6GYApQmSbblUW-gzGzoHsz',
+            appKey: 'Tw1jCC104Xm708BSiq2EvxF6',
+            placeholder: '各位道友，请举手发言',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+        })
+    </script>
+</body> -->
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
