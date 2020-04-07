@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    H5新特性 |  程建
+    js的防抖节流 |  程建
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -47,7 +47,7 @@ var _hmt = _hmt || [];
   <div id="app">
     <main class="content on">
       <section class="outer">
-  <article id="post-H5新特性" class="article article-type-post" itemscope
+  <article id="post-js的防抖节流" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -55,7 +55,7 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  H5新特性
+  js的防抖节流
 </h1>
  
 
@@ -64,12 +64,12 @@ var _hmt = _hmt || [];
 
     
     <div class="article-meta">
-      <a href="/H5新特性/" class="article-date">
-  <time datetime="2020-04-06T14:55:47.000Z" itemprop="datePublished">2020-04-06</time>
+      <a href="/js的防抖节流/" class="article-date">
+  <time datetime="2020-04-07T16:21:18.000Z" itemprop="datePublished">2020-04-08</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/HTML/">HTML</a>
+    <a class="article-category-link" href="/categories/js/">js</a>
   </div>
 
       
@@ -79,7 +79,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Wortzahl:</span>
-            <span class="post-count">496</span>
+            <span class="post-count">600</span>
         </span>
     </span>
 
@@ -113,58 +113,44 @@ var _hmt = _hmt || [];
       
 
       
-      <h2 id="H5新特性"><a href="#H5新特性" class="headerlink" title="H5新特性"></a>H5新特性</h2><p>在前端领域H5是一个技术集合（技术栈），而不是一个单纯的技术点，所有不能理解为是一个html规范</p>
-<p>H5的新特性需要从梳理，一下为H5新特性（不止这些）</p>
-<ul>
-<li><p>html</p>
-<ul>
-<li>语义化标签</li>
-<li>表单新特性</li>
-</ul>
+      <h2 id="防抖节流"><a href="#防抖节流" class="headerlink" title="防抖节流"></a>防抖节流</h2><h3 id="防抖"><a href="#防抖" class="headerlink" title="防抖"></a>防抖</h3><ol>
+<li><p>定义 </p>
+<p>在事件被触发n秒后再执行回调，如果在这n秒内又被触发，则重新计时；典型的案例就是输入搜索：输入结束后n秒才进行搜索请求，n秒内又输入的内容，就重新计时 </p>
 </li>
-<li><p>css</p>
-<ul>
-<li>新增选择器</li>
-<li>属性的增强</li>
-<li>过渡</li>
-<li>转换</li>
-<li>动画</li>
-<li>媒体查询</li>
-</ul>
+<li><p>实现原理</p>
+<p>函数防抖的基本思想是设置一个定时器，在指定时间间隔内运行代码时清楚上一次的定时器，并设置另一个定时器，知道函数请求停止并超过时间间隔才会执行。</p>
 </li>
-<li><p>javascript</p>
-<ul>
-<li>新增应用API</li>
-<li>canvas绘图</li>
-<li>ES6</li>
-</ul>
+<li><p>使用场景 </p>
+<p>文本框输入搜索（连续输入时避免多次请求接口） 、window.onscroll事件、防止用户快速点击多次按钮</p>
 </li>
-</ul>
-<h5 id="1-1语义化标签"><a href="#1-1语义化标签" class="headerlink" title="1.1语义化标签"></a>1.1语义化标签</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--语义化标签：和div是一样的没有任何特殊的作用，仅仅是语义而已--&gt;</span><br><span class="line">&lt;!--作用：让结构更清晰，利于搜索引擎优化, SEO --&gt;</span><br><span class="line">&lt;!--头部--&gt;</span><br><span class="line">&lt;header&gt;&lt;/header&gt;</span><br><span class="line">&lt;!--导航--&gt;</span><br><span class="line">&lt;nav&gt;&lt;/nav&gt;</span><br><span class="line">&lt;!--主体--&gt;</span><br><span class="line">&lt;section&gt;</span><br><span class="line">    &lt;!--主体 侧边栏--&gt;</span><br><span class="line">    &lt;aside&gt;&lt;/aside&gt;</span><br><span class="line">    &lt;!--主体 内容--&gt;</span><br><span class="line">    &lt;article&gt;&lt;/article&gt;</span><br><span class="line">&lt;/section&gt;</span><br><span class="line">&lt;!--底部--&gt;</span><br><span class="line">&lt;footer&gt;&lt;/footer&gt;</span><br></pre></td></tr></table></figure>
+<li><p>代码实现 </p>
+<p>防止用户多次点击按钮，做到最后一次点击按钮1秒后再执行按钮的点击方法</p>
+<p>在项目公共方法文件里写防抖函数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 防抖函数</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> debounce = <span class="function">(<span class="params">fn, delay</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">var</span> timer = <span class="literal">null</span> <span class="comment">// 借助闭包</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (timer) &#123;</span><br><span class="line">      clearTimeout(timer)</span><br><span class="line">    &#125;</span><br><span class="line">    timer = setTimeout(fn, delay)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h5 id="1-2表单新特性"><a href="#1-2表单新特性" class="headerlink" title="1.2表单新特性"></a>1.2表单新特性</h5><p>input的type新增了text、checkbox、password、button、file、range等很多类型</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"lunch"</span> <span class="attr">list</span>=<span class="string">"lunchList"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在项目中调用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;el-button type=&quot;danger&quot; @click=&quot;testDebounce&quot;&gt;</span><br><span class="line">    测试防抖</span><br><span class="line">  &lt;/el-button&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import &#123; debounce &#125; from &apos;@u&apos;</span><br><span class="line">export default &#123;</span><br><span class="line">  methods: &#123;</span><br><span class="line">    testDebounce: debounce(() =&gt; &#123;</span><br><span class="line">      console.log(&apos;安排上了&apos;)</span><br><span class="line">    &#125;, 1000),</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
-<p>新增了选择框</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">datalist</span> <span class="attr">id</span>=<span class="string">"lunchList"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>京酱肉丝<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>锅包肉<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">datalist</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>新增了属性</p>
-<ol>
-<li><p>autocomplete 控制 自动完成功能   off 关闭  on 开启  给form加整个表单不使用自动完成</p>
-</li>
-<li><p>required 必填</p>
-</li>
-<li><p>忽略表单H5检验方式 novalidate</p>
+
 </li>
 </ol>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"#"</span> <span class="attr">autocomplete</span>=<span class="string">"off"</span> <span class="attr">novalidate</span> <span class="attr">id</span>=<span class="string">"form"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">type</span>=<span class="string">"email"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">type</span>=<span class="string">"password"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"提交"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="节流"><a href="#节流" class="headerlink" title="节流"></a>节流</h3><ol>
+<li><p>定义 </p>
+<p>当一个事件持续触发时这个事件的函数只在n秒中执行一次</p>
+</li>
+<li><p>实现原理</p>
+<p>借助<code>setTimeout</code>来做一个简单的实现，加上一个状态位<code>valid</code>来表示当前函数是否处于工作状态（不止这一种实现方式，使用时间戳的差值也可实现）</p>
+</li>
+<li><p>代码实现 </p>
+<p>在项目公共方法文件里写节流函数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">throttle</span>(<span class="params">fn,delay</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> valid = <span class="literal">true</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">       <span class="keyword">if</span>(!valid)&#123;</span><br><span class="line">           <span class="comment">//休息时间 暂不接客</span></span><br><span class="line">           <span class="keyword">return</span> <span class="literal">false</span> </span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">// 工作时间，执行函数并且在间隔期内把状态位设为无效</span></span><br><span class="line">        valid = <span class="literal">false</span></span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">            fn()</span><br><span class="line">            valid = <span class="literal">true</span>;</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h5 id="1-5新增动画"><a href="#1-5新增动画" class="headerlink" title="1.5新增动画"></a>1.5新增动画</h5><p><a href="http://chengjian123.com/H5新特性/">http://chengjian123.com/H5%E6%96%B0%E7%89%B9%E6%80%A7/</a></p>
-<h5 id="3-1新增应用API"><a href="#3-1新增应用API" class="headerlink" title="3.1新增应用API"></a>3.1新增应用API</h5><p> webworker:多线程</p>
-<p>webscoket：实时通讯协议</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建Socket对象</span></span><br><span class="line"><span class="keyword">var</span> Socket = <span class="keyword">new</span> WebSocket(url, [protocol] );</span><br><span class="line"><span class="comment">//事件</span></span><br><span class="line">Socket.onopen()&#123;&#125; <span class="comment">//连接建立时触发</span></span><br><span class="line">Socket.onmessage()&#123;&#125; <span class="comment">//客户端接收服务端数据时触发</span></span><br><span class="line">Socket.onerror()&#123;&#125; <span class="comment">//通信发生错误时触发</span></span><br><span class="line">Socket.onclose()&#123;&#125; <span class="comment">//连接关闭时触发</span></span><br><span class="line"><span class="comment">//方法</span></span><br><span class="line">Socket.send() <span class="comment">//使用连接发送数据</span></span><br><span class="line">Socket.close() <span class="comment">//关闭连接</span></span><br></pre></td></tr></table></figure>
+<p>在项目中调用（调用和防抖函数一样）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;el-button type=&quot;danger&quot; @click=&quot;testDebounce&quot;&gt;</span><br><span class="line">    测试防抖</span><br><span class="line">  &lt;/el-button&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import &#123; throttle &#125; from &apos;@u&apos;</span><br><span class="line">export default &#123;</span><br><span class="line">  methods: &#123;</span><br><span class="line">    testDebounce: throttle(() =&gt; &#123;</span><br><span class="line">      console.log(&apos;安排上了&apos;)</span><br><span class="line">    &#125;, 1000),</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
-<p>draggable:拖拽属性</p>
+</li>
+</ol>
 
       
       <!-- reward -->
@@ -229,15 +215,13 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://chengjian123.com/H5新特性/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://chengjian123.com/js的防抖节流/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/H5/">H5</a></li></ul>
-
 
     </footer>
 
@@ -247,19 +231,10 @@ var _hmt = _hmt || [];
   
   <nav class="article-nav">
     
-      <a href="/js的防抖节流/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            js的防抖节流
-          
-        </div>
-      </a>
     
-    
-      <a href="/CSS3动画/" class="article-nav-link">
+      <a href="/H5新特性/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">CSS3动画</div>
+        <div class="article-nav-title">H5新特性</div>
       </a>
     
   </nav>
