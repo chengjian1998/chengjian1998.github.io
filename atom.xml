@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>程建</title>
+  
+  <subtitle>个人博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://chengjian123.com/"/>
+  <updated>2020-04-06T16:05:52.693Z</updated>
+  <id>http://chengjian123.com/</id>
+  
+  <author>
+    <name>程建</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>H5新特性</title>
+    <link href="http://chengjian123.com/H5%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    <id>http://chengjian123.com/H5%E6%96%B0%E7%89%B9%E6%80%A7/</id>
+    <published>2020-04-06T14:55:47.000Z</published>
+    <updated>2020-04-06T16:05:52.693Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;H5新特性&quot;&gt;&lt;a href=&quot;#H5新特性&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="HTML" scheme="http://chengjian123.com/categories/HTML/"/>
+    
+    
+      <category term="H5" scheme="http://chengjian123.com/tags/H5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS3动画</title>
+    <link href="http://chengjian123.com/CSS3%E5%8A%A8%E7%94%BB/"/>
+    <id>http://chengjian123.com/CSS3%E5%8A%A8%E7%94%BB/</id>
+    <published>2020-04-06T14:39:10.000Z</published>
+    <updated>2020-04-06T14:53:44.877Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;CSS3动画&quot;&gt;&lt;a href=&quot;#CSS3动画&quot; class=&quot;headerlink&quot; title=&quot;CSS3动画&quot;&gt;&lt;/a&gt;CSS3动画&lt;/h2&gt;&lt;h5 id=&quot;创建动画&quot;&gt;&lt;a href=&quot;#创建动画&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://chengjian123.com/categories/CSS/"/>
+    
+    
+      <category term="动画" scheme="http://chengjian123.com/tags/%E5%8A%A8%E7%94%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>清除浮动</title>
+    <link href="http://chengjian123.com/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/"/>
+    <id>http://chengjian123.com/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/</id>
+    <published>2020-04-06T14:24:11.000Z</published>
+    <updated>2020-04-06T14:45:05.740Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;常用的两种清除浮动的方式&quot;&gt;&lt;a href=&quot;#常用的两种清除浮动的方式&quot; class=&quot;headerlink&quot; title=&quot;常用的两种清除浮动的方式&quot;&gt;&lt;/a&gt;常用的两种清除浮动的方式&lt;/h2&gt;&lt;p&gt; after伪元素清除浮动&lt;/p&gt;
+&lt;figure
+        
+      
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://chengjian123.com/categories/CSS/"/>
+    
+    
+      <category term="布局" scheme="http://chengjian123.com/tags/%E5%B8%83%E5%B1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js深拷贝和浅拷贝</title>
+    <link href="http://chengjian123.com/js%E6%B7%B1%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%B5%85%E6%8B%B7%E8%B4%9D/"/>
+    <id>http://chengjian123.com/js%E6%B7%B1%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%B5%85%E6%8B%B7%E8%B4%9D/</id>
+    <published>2019-07-09T17:01:19.000Z</published>
+    <updated>2020-04-02T14:48:19.193Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>flex属性</title>
+    <link href="http://chengjian123.com/flex%E5%B1%9E%E6%80%A7/"/>
+    <id>http://chengjian123.com/flex%E5%B1%9E%E6%80%A7/</id>
+    <published>2019-07-09T14:47:42.000Z</published>
+    <updated>2020-04-02T16:56:41.537Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;flex布局&quot;&gt;&lt;a href=&quot;#flex布局&quot; class=&quot;headerlink&quot; title=&quot;flex布局&quot;&gt;&lt;/a&gt;flex布局&lt;/h2&gt;&lt;h4 id=&quot;使用flex的特点&quot;&gt;&lt;a href=&quot;#使用flex的特点&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="CSS3" scheme="http://chengjian123.com/categories/CSS3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端路由</title>
+    <link href="http://chengjian123.com/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1/"/>
+    <id>http://chengjian123.com/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1/</id>
+    <published>2019-06-20T10:26:53.000Z</published>
+    <updated>2020-04-02T16:55:57.831Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;路由&quot;&gt;&lt;a href=&quot;#路由&quot; class=&quot;headerlink&quot; title=&quot;路由&quot;&gt;&lt;/a&gt;路由&lt;/h2&gt;&lt;p&gt;​    &lt;strong&gt;概念（vue）：&lt;/strong&gt;&lt;br&gt;​        当路径中的 hash
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://chengjian123.com/categories/Vue/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Vue计算属性</title>
+    <link href="http://chengjian123.com/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/"/>
+    <id>http://chengjian123.com/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/</id>
+    <published>2019-06-15T09:56:16.000Z</published>
+    <updated>2020-04-02T14:48:28.656Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;计算属性&quot;&gt;&lt;a href=&quot;#计算属性&quot; class=&quot;headerlink&quot; title=&quot;计算属性&quot;&gt;&lt;/a&gt;计算属性&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;计算属性:是Vue实例的一个选项
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://chengjian123.com/categories/Vue/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Vue的常用指令</title>
+    <link href="http://chengjian123.com/Vue%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
+    <id>http://chengjian123.com/Vue%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</id>
+    <published>2019-06-10T09:48:27.000Z</published>
+    <updated>2020-04-07T14:01:16.077Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Vue常用指令&quot;&gt;&lt;a href=&quot;#Vue常用指令&quot; class=&quot;headerlink&quot; title=&quot;Vue常用指令&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://cn.vuejs.org/v2/api/#%E6%8C%87%E4%BB%A4&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://chengjian123.com/categories/Vue/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Vue生命周期</title>
+    <link href="http://chengjian123.com/Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    <id>http://chengjian123.com/Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</id>
+    <published>2019-06-05T10:04:44.000Z</published>
+    <updated>2020-04-02T14:48:37.286Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;生命周期&quot;&gt;&lt;a href=&quot;#生命周期&quot; class=&quot;headerlink&quot; title=&quot;生命周期&quot;&gt;&lt;/a&gt;生命周期&lt;/h3&gt;&lt;p&gt;​        &lt;strong&gt;概念：&lt;/strong&gt;&lt;br&gt;​            当 vue 实例从 创建 —
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://chengjian123.com/categories/Vue/"/>
+    
+    
+      <category term="重要" scheme="http://chengjian123.com/tags/%E9%87%8D%E8%A6%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo搭建教程</title>
+    <link href="http://chengjian123.com/hexo%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
+    <id>http://chengjian123.com/hexo%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</id>
+    <published>2019-05-18T12:54:37.000Z</published>
+    <updated>2020-04-02T14:48:09.510Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Hexo简介&quot;&gt;&lt;a href=&quot;#Hexo简介&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://chengjian123.com/categories/hexo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ECMAScript6语法基础</title>
+    <link href="http://chengjian123.com/ECMAScript6%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
+    <id>http://chengjian123.com/ECMAScript6%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/</id>
+    <published>2019-05-04T12:03:20.000Z</published>
+    <updated>2020-04-02T14:48:02.695Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;ECMAScript-6-语法基础&quot;&gt;&lt;a href=&quot;#ECMAScript-6-语法基础&quot; class=&quot;headerlink&quot; title=&quot;ECMAScript 6 语法基础&quot;&gt;&lt;/a&gt;ECMAScript 6 语法基础&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://chengjian123.com/categories/js/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>js高级知识点整理</title>
+    <link href="http://chengjian123.com/js%E9%AB%98%E7%BA%A7%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/"/>
+    <id>http://chengjian123.com/js%E9%AB%98%E7%BA%A7%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/</id>
+    <published>2019-05-03T09:41:53.000Z</published>
+    <updated>2020-04-02T14:48:14.413Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;04-JavaScript高级&quot;&gt;&lt;a href=&quot;#04-JavaScript高级&quot; class=&quot;headerlink&quot; title=&quot;04-JavaScript高级&quot;&gt;&lt;/a&gt;04-JavaScript高级&lt;/h2&gt;&lt;h4 id=&quot;1-原型对象&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://chengjian123.com/categories/js/"/>
+    
+    
+  </entry>
+  
+</feed>
