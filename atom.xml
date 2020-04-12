@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chengjian123.com/"/>
-  <updated>2020-04-07T16:37:21.346Z</updated>
+  <updated>2020-04-12T09:35:53.146Z</updated>
   <id>http://chengjian123.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>封装axios</title>
+    <link href="http://chengjian123.com/%E5%B0%81%E8%A3%85axios/"/>
+    <id>http://chengjian123.com/%E5%B0%81%E8%A3%85axios/</id>
+    <published>2020-04-12T09:30:12.000Z</published>
+    <updated>2020-04-12T09:35:53.146Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;封装axios&quot;&gt;&lt;a href=&quot;#封装axios&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="axios" scheme="http://chengjian123.com/categories/axios/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>js的防抖节流</title>
